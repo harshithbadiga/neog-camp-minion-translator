@@ -8,6 +8,11 @@
      return funUrl + "?" + "text=" + input
  }
 
+ function errorHandler(error){
+     console.log("Error occured! :(", error)
+     alert("Something is wrong with server. Please try again later!")
+ }
+
  function clickHandler() {
      var userInput = inputText.value;
      fetch(convertUrl(userInput))
@@ -16,6 +21,7 @@
          var transaltedText = json.contents.translated
          outputText.innerText = transaltedText
      })
+     .catch(errorHandler)
  }
 
  translateBtn.addEventListener("click",clickHandler);
