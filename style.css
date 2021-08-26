@@ -1,0 +1,48 @@
+body{
+    background-color: aqua;
+}
+
+
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.output{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    padding: 1rem;
+}
+h1{
+    color: blueviolet;
+}
+
+.translate{
+    padding: 1.2rem;
+    background-color: black;
+    color:wheat;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+}
+
+.translate:hover{
+    background-color: wheat;
+    color: black;
+    transition: ease-out 150ms;
+}
